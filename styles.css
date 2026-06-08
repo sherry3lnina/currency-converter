@@ -1,13 +1,23 @@
-/* Custom scrollbar to match Notion's dark mode aesthetic */
+/* Clean styling adjustments for soft aesthetic and compact sizes */
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e4e4e7;
+    background: #e1b3b8;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #d4d4d8;
+    background: #d48893;
+}
+
+/* Prevents input boxes from breaking alignment layout at tiny micro-widths */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
